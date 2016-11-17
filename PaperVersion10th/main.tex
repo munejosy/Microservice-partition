@@ -1,0 +1,50 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{colortbl}
+\usepackage{todonotes}
+\input{macros-edit}
+\newcommand{\todoBK}[1]{\todo[color=green!40]{\small #1 (BK)}}
+\newcommand{\todoBKinline}[1]{\todo[color=green!40,inline]{\small #1 (BK)}}
+\newcommand{\todoDT}[1]{\todo[color=blue!40]{\small #1 (DT)}}
+\newcommand{\todoJM}[1]{\todo[color=yellow!40]{\small #1 (JM)}}
+  
+%\title{Partitioning Microservices: A domain Engineering Approach}
+\title{Challenges in partitioning Microservices : A domain Engineering Approach}
+
+
+%\author{ Doreen Tuheirwe-Mukasa \\ 			\IEEEauthorblockN{Department of Informatics \\University of Bergen \\ dtu003@student.uib.no}
+  %  }
+    
+\begin{document}
+\maketitle
+\todoBKinline{We have started to use a certain set of Macros to collaboratively work on Latex files. 
+Here is how to use them.
+Write backslash-your-name to add a comment: \doreen{Doreen's comment}. You can also suggest edits (but feel free to change stuff 
+directly - sometimes it is good to mark something for later discussion. Use ins, del, chg commands as follows: \ins{new text}, 
+\del{old text}, \chg{old text}{new text}. Use ugh to highlight stuff for revisiting \ugh{needs improvement}.}
+
+
+\benjamin{We could even think of splitting the paper into two  (1) One concentrating on challenges of splitting micro services (2) second we apply a domain engineering approach to resolve the issues}
+\begin{abstract}
+\noindent
+In this paper, we attempt to define a micro service and show how micro services can be partitioned based on a domain driven engineering approach.
+
+\end{abstract}
+
+\IEEEpeerreviewmaketitle
+
+\input{Introduction.tex}
+
+\input{RelatedWork.tex}
+
+\input{Procedure.tex}
+
+%\section{Discussion}
+
+%\section{Conclusion and Future Work} \label{Conclusions}
+
+\bibliographystyle{IEEEtran}
+\bibliography{Partition}
+
+\end{document}

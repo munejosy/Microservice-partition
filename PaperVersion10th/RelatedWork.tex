@@ -1,0 +1,15 @@
+\section{Related Work} \label{Related Work}
+\textbf{Something on Microservices building blocks (Joselyne)}
+
+A micro-service is small and focused on doing one thing. Decomposing an application to a micro-service is a crucial task. the following is different strategy to sizing a microservice.
+
+\textbf{Line of code} Some developers relate the size of a micro-service to the number of lines of code (LOC). They recommend that a service should not exceed(10 to 100 LOC) \cite{schermann2015all}. However, this practice is not genuine because micro-services are built using different technology stacks, which differ on LOC, secondary service are deffer to each other on minimum LOC depending on the type of service. For example process service that coordinate call between multiple tasks can have 100 to thousand LOC, whether a data service can be implemented by 10 to approximately 100 LOC . 
+
+\textbf{Deployment unit} Micro-service is defined as one kind of development and deployment unit. this service is mainly in cloud as IaaS, PaaS and Security as service to deploy large application as a set of small services that can be deployed , tested, scaled, operated and updated independently. This service is partitioned in the way it can register themselves, be discovered by other services and be generally orchestrated in their deployment and update process\cite{Villamizar2016}.
+
+\textbf{Business capability}: Business capability defines what a system does in enabling the organization's capacity to successfully perform a unique business activity \cite{ulrich2016business}. In agile development, it is an important way of combining data that have something in common such as functionality, rather than using collections of data entities that expose CRUD-style methods. Because it helps to understand demand impact on application architecture at an early stage. In literature, micro-services are built based on the need to address one business capability, or one business functionality at a time. However developers still have a problem on using business capability as boundary of micro-service, on defining which level of functionality a micro-service should fit, so that it can't be too small a service that depends on other services, leading to decrease in its autonomy or too big to lose the dependency.
+
+
+
+\textbf{Something on Domain Engineering building blocks (Doreen))}
+What in domain engineering helps to breakdown into services, can be used to breakdown?

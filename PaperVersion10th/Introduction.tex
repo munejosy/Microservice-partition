@@ -1,0 +1,21 @@
+\section{Introduction} \label{Introduction}
+Micro-services is the new buzz word around software architecture patterns today. Micro-services provide several advantages over monolithic systems. Some of these include the ability to make rapid functional changes which contributes to achieving high integrity factors such as maintainability and scalability, continuous software delivery, and delivering software into production \cite{thones2015microservices}. 
+
+Micro-service introduce a new application design strategy that uses independent fine grained services to compose an application, compared to monolithic application style. In monolithic an application is a single large repository of codebase \cite{Hasselbring2016}. The challenge with that is the difficulty to decompose a system for partial upgrade \cite{Le2014} Micro-service is mainly used in cloud to deploy large and medium applications as a set of small independent services that can be developed, tested, deployed, scaled, operated and upgraded independently. Micro-service in cloud are partitioned so that the services must have ways to register themselves, be discovered by other services, record their conﬁguration, and be generally orchestrated in their deployment and update processes\cite{Villamizar2016}  
+
+ 
+\noindent
+However, a major question and challenge is on how to introduce micro-services, and arrive at an appropriate size for a micro-service \cite{namiot2014micro,fowler2014microservices}. A major question to be answered is where component boundaries should lie on \cite{fowler2014microservices}.
+
+\noindent
+Some suggestions have been proposed to this effect, including among others, aspects on if the micro-service will be a user service, and therefore a decision being made based on the tooling (with leaning towards the usage of lightweight tools), size being determined by the number of lines of code (with recommendations of not exceeding a couple thousand lines of code), and functionality in terms of the micro-service accomplishing specifically only one task \cite{thones2015microservices}. \cite{namiot2014micro} proposes partitioning services by use case. Other strategies are to partition by verbs, nouns, or resources, and the scaling cube \cite{abbott2009art}. According to \cite{newman2015building}, independent services should focus service boundaries on	business	boundaries, so as to avoid the difficulties introduced when the service becomes too large. He also postulates that a micro service as something	that	could	be rewritten	in	two	weeks, with proper alignment to team structures.
+
+Size for a microservice is important, because the smaller the service, the more the benefits of micro-service architecture are maximized \cite{newman2015building}. However, there is a lot of ambiguity around the right size  of a micro-service, and there is lack of good guidelines for  designing a micro-service in  terms of scope or size. The challenges that arise encompass how a micro-service can be partitioned in the right size to ensure loose coupling, such that the service can easily be changed to keep up with business and technical demands.
+
+\noindent
+According to \cite{owen2016three}, three keys to successful microservices are componentization, collaboration, and reliable connections and controls.
+
+\noindent
+That not withstanding, the microservice approach must contend with some issues such as integration between communicating applications \cite{thones2015microservices}, and complexities that arise from creating a distributed system. These include testing, deployment and increased memory consumption \cite{namiot2014micro}. \cite{fowler2014microservices} cites the need for microservices to design for failure by possibly, automatically restoring the failed service.
+
+Domain Driven Design (DDD) provides a number of useful patterns for dealing with the kind of complexity encountered in designing distributed systems and with large and complex domains, by breaking the domain into a series of bounded contexts.
